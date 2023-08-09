@@ -61,7 +61,7 @@ variable "database_password" {
 
 variable "docker_image" {
   description = "Docker image url used in ECS task."
-  default     = "mageai/mageai:latest"
+  default     = "044211868032.dkr.ecr.us-gov-east-1.amazonaws.com/bvgs-mage-prod:210c54ca5bcf0b8bcf3c8229ddbe25bdaf9ffbd7"
 }
 
 variable "ecs_task_cpu" {
