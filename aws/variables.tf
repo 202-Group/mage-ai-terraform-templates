@@ -21,7 +21,7 @@ variable "app_count" {
 variable "aws_region" {
   type        = string
   description = "AWS Region"
-  default     = "us-west-2"
+  default     = "us-gov-east-1"
 }
 
 variable "aws_cloudwatch_retention_in_days" {
@@ -33,7 +33,7 @@ variable "aws_cloudwatch_retention_in_days" {
 variable "app_name" {
   type        = string
   description = "Application Name"
-  default     = "mage-data-prep"
+  default     = "bvgs-mage"
 }
 
 variable "app_environment" {
@@ -61,7 +61,7 @@ variable "database_password" {
 
 variable "docker_image" {
   description = "Docker image url used in ECS task."
-  default     = "mageai/mageai:latest"
+  default     = "044211868032.dkr.ecr.us-gov-east-1.amazonaws.com/bvgs-mage-prod:210c54ca5bcf0b8bcf3c8229ddbe25bdaf9ffbd7"
 }
 
 variable "ecs_task_cpu" {
@@ -86,5 +86,5 @@ variable "private_subnets" {
 
 variable "availability_zones" {
   description = "List of availability zones"
-  default     = ["us-west-2a", "us-west-2b"]
+  default     = ["us-gov-east-1a", "us-gov-east-1b"]
 }
